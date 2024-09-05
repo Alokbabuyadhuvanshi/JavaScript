@@ -40,4 +40,41 @@ function loginUserMessage(username = "sam"){
 }
 
 //console.log(loginUserMessage("alok"))
-console.log(loginUserMessage())
+//console.log(loginUserMessage())
+
+
+function calculateCartPrice(num1,num2,...num3){   // ...num is a rest operator
+    return num3
+}
+
+console.log(calculateCartPrice(200,300,400,500,600))
+
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+
+const user ={
+    username:"alok",
+    price:199
+}
+
+handleObject(user)             
+handleObject({
+    username:"lucky",          // you can also give arguments directly during function calling
+    price:399
+})
+
+const myNewArray = [200,400,500,600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// directly give the variable name of the array to the argument
+console.log(returnSecondValue(myNewArray));
+
+// or you can direct give an array to the arguemnt
+console.log(returnSecondValue([100,200,300,400]));
+
