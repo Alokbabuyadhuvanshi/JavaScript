@@ -34,11 +34,11 @@ const obj3 = {...obj1, ...obj2}
 // console.log(tinderUser);
 
 
-// console.log(Object.keys(tinderUser));
+//  console.log(Object.keys(tinderUser)); // returnonly keys of the object in the form Of array
 
-// console.log(Object.values(tinderUser));
+//  console.log(Object.values(tinderUser));  // return only values of the object in the form of array
 
-// console.log(Object.entries(tinderUser));
+//  console.log(Object.entries(tinderUser));  // return full key value pair in the form of array
 
 
 // console.log(tinderUser.hasOwnProperty('name'));
