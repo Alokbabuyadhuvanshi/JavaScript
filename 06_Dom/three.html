@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node list</title>
 </head>
-<body style="background-color: #212121; color: #fff;">
+<body style="background-color: #212121; color: #fff;">\
+    
+</body>
     <script>
         const div = document.createElement("div")
         console.log(div);
@@ -13,11 +15,12 @@
         div.id = Math.round(Math.random()*10)
         div.setAttribute("title","generated title")
         div.style.backgroundColor = "green"
-        div.innerText = "JavaScript"
+        div.innerText = "JavaScript"   // this will over-write the value
+
+        // this "addTest" will not over-write 
         const addText = document.createTextNode(" adding text")
         div.appendChild(addText)
 
         document.body.appendChild(div)
     </script>
-</body>
 </html>
