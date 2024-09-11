@@ -1,0 +1,40 @@
+.main{margin: 100px;
+    height: 500px;
+    width: 500px;
+    
+
+}
+
+#gray{
+    display:inline-flex;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    
+}
+#blue{
+    display:inline-flex;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    
+}
+#yellow{
+    display:inline-flex;
+    background-color:yellow;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    
+}
+#red{
+    display:inline-flex;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    
+}
