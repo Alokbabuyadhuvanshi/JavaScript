@@ -1,3 +1,19 @@
 .container{
     background-color: rgb(165, 157, 157);
+    padding: 10px;
+}
+
+input{
+    margin: 10px;
+}
+
+#results{
+    height: 40px;
+    width: 280px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#weight_Guide{
+    margin-top: 50px;
 }
