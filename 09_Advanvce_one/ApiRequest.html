@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #212121;">
     Value	State	Description
 0	UNSENT	Client has been created. open() not called yet.
 1	OPENED	open() has been called.
@@ -17,6 +17,14 @@
     const requestUrl = 'https://api.github.com/users/alokbabuyadhuvanshi'
     const xhr = new XMLHttpRequest()
     xhr.open('GET',requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            //console.log(this.responseText);
+            const data = JSON.parse(this.responseText)
+            console.log(data.following);
+        }
+    }
     xhr.send()
 </script>
 </html>
